@@ -1,0 +1,28 @@
+.our-work {
+    padding-top: 0;
+}
+
+.work-list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.work-list__card {
+    position: relative;
+}
+
+.work-list__text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    bottom: 0px;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
+
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primery-bg-color);
+}
