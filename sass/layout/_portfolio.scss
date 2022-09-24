@@ -69,10 +69,10 @@
     // height: 100%;
 }
 
-.project-list__link {
-    height: 100%;
-    // align-items: stretch;
-}
+// .project-list__link {
+//     height: 100%;
+//     // align-items: stretch;
+// }
 
 .project-list__card {
         // align-items: stretch;
@@ -89,7 +89,9 @@
 }
 
 .project-list__link {
-  display: block;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
   transition: box-shadow var(--transition_data);
 
   &:hover,
@@ -111,9 +113,7 @@
   padding: 20px 24px;
   border: 1px solid var(--project-list-border-color);
   border-top: none;
-
-    margin-bottom: auto;
-        // height: 100%;
+  flex-grow: 1;
 }
 
 .project-list__card-type {
