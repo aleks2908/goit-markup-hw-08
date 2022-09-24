@@ -39,6 +39,18 @@
             </li>
           </ul>
         </nav>
+
+        <button class="open-mobile-menu-btn" data-menu-open>
+          <svg
+            class="open-mobile-menu-btn__icon"
+            aria-label="іконка відкриття мобільного меню"
+            width="40"
+            height="40"
+          >
+            <use href="./images/sprite.svg#burger"></use>
+          </svg>
+        </button>
+
         <ul class="contact-list">
           <li>
             <a class="contact-list__link" href="mailto:info@devstudio.com">
@@ -68,6 +80,61 @@
             >
           </li>
         </ul>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="contaner mobile-menu_contaner">
+          <button class="close-mobile-menu-btn" data-menu-close>
+            <svg
+              class="close-mobile-menu-btn__icon"
+              aria-label="іконка закриття мобільного меню"
+              width="40"
+              height="40"
+            >
+              <use href="./images/sprite.svg#mobile-close"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="./index.html">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link mobile-menu__link--current" href="#">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#contacts">Контакти</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu-contact-list">
+            <li>
+              <a class="mobile-menu-contact-list__tel" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li>
+              <a class="mobile-menu-contact-list__mail" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="mobile-menu-media-list">
+            <li>
+              <a class="mobile-menu-media-list__link" href="#">Instagram</a>
+            </li>
+            <li>
+              <a class="mobile-menu-media-list__link" href="#">Twitter</a>
+            </li>
+            <li>
+              <a class="mobile-menu-media-list__link" href="#">Facebook</a>
+            </li>
+            <li>
+              <a class="mobile-menu-media-list__link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -102,6 +169,7 @@
                   <img
                     src="./images/portfolio/portfolio-1.jpg"
                     alt="Три фотографії людей на екрані ноутбука"
+                    width="100%"
                   />
                   <p class="project-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -123,6 +191,7 @@
                   <img
                     src="./images/portfolio/portfolio-2.jpg"
                     alt="Двоє чоловіків грають в баскетбол"
+                    width="100%"
                   />
                   <p class="project-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -144,6 +213,7 @@
                   <img
                     src="./images/portfolio/portfolio-3.jpg"
                     alt="Логотип ресторану морепродуктів"
+                    width="100%"
                   />
                   <p class="project-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -164,6 +234,7 @@
                   <img
                     src="./images/portfolio/portfolio-4.jpg"
                     alt="Великі чорні навушники на білому фоні"
+                    width="100%"
                   />
                   <p class="project-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -184,6 +255,7 @@
                   <img
                     src="./images/portfolio/portfolio-5.jpg"
                     alt="Біла і коричнева картонна коробка лежать попуч"
+                    width="100%"
                   />
                   <p class="project-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -204,6 +276,7 @@
                   <img
                     src="./images/portfolio/portfolio-6.jpg"
                     alt="Чорний монітор з зображенням відкритого сайту"
+                    width="100%"
                   />
                   <p class="project-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -221,7 +294,11 @@
             <li class="project-list__card">
               <a class="project-list__link" href="#">
                 <div class="project-list__overlay">
-                  <img src="./images/portfolio/portfolio-7.jpg" alt="Фото розкритого журналу" />
+                  <img
+                    src="./images/portfolio/portfolio-7.jpg"
+                    alt="Фото розкритого журналу"
+                    width="100%"
+                  />
                   <p class="project-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -242,6 +319,7 @@
                   <img
                     src="./images/portfolio/portfolio-8.jpg"
                     alt="Біла бірка з написом назви проекту"
+                    width="100%"
                   />
                   <p class="project-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -262,6 +340,7 @@
                   <img
                     src="./images/portfolio/portfolio-9.jpg"
                     alt="Руки на клавіатурі ноутбука, відкрита сторінка сайту"
+                    width="100%"
                   />
                   <p class="project-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -347,24 +426,31 @@
           </div>
 
           <form class="subscribe-form">
-            <label class="subscribe-form__label"
-              >Підпишіться на розсилку
+            <p class="subscribe-form__title">Підпишіться на розсилку</p>
+            <div>
               <input
                 type="email"
                 class="subscribe-form__input"
                 name="subscribe-email"
                 placeholder="E-mail"
                 required
-            /></label>
-            <button class="subscribe-form__button" type="submit">
-              Підписатися
-              <svg aria-label="іконка літачка" class="subscribe-form__icon" width="24" height="24">
-                <use href="./images/icon.svg#send"></use>
-              </svg>
-            </button>
+              />
+              <button class="subscribe-form__button" type="submit">
+                Підписатися
+                <svg
+                  aria-label="іконка літачка"
+                  class="subscribe-form__icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icon.svg#send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
