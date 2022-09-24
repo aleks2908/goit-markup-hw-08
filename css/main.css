@@ -1132,7 +1132,7 @@ body {
   color: var(--primery-bg-color);
   background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
-  overflow: auto;
+  overflow: hidden;
   transition: transform var(--transition_data);
 }
 .project-list__link:hover .project-list__overlay-text, .project-list__link:focus .project-list__overlay-text {
