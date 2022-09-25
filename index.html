@@ -83,7 +83,7 @@
       </div>
 
       <div class="mobile-menu" data-menu>
-        <div class="contaner mobile-menu_contaner">
+        <div class="contaner mobile-menu__contaner">
           <button class="close-mobile-menu-btn" data-menu-close>
             <svg
               class="close-mobile-menu-btn__icon"
@@ -121,17 +121,17 @@
           </ul>
 
           <ul class="mobile-menu-media-list">
-            <li>
-              <a class="mobile-menu-media-list__link" href="#">Instagram</a>
+            <li class="mobile-menu-media-list__item">
+              <a class="mobile-menu-media-list__link" href="#" lang="en">Instagram</a>
             </li>
-            <li>
-              <a class="mobile-menu-media-list__link" href="#">Twitter</a>
+            <li class="mobile-menu-media-list__item">
+              <a class="mobile-menu-media-list__link" href="#" lang="en">Twitter</a>
             </li>
-            <li>
-              <a class="mobile-menu-media-list__link" href="#">Facebook</a>
+            <li class="mobile-menu-media-list__item">
+              <a class="mobile-menu-media-list__link" href="#" lang="en">Facebook</a>
             </li>
-            <li>
-              <a class="mobile-menu-media-list__link" href="#">LinkedIn</a>
+            <li class="mobile-menu-media-list__item">
+              <a class="mobile-menu-media-list__link" href="#" lang="en">LinkedIn</a>
             </li>
           </ul>
         </div>
@@ -208,27 +208,59 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="work-list">
             <li class="work-list__card">
-              <img
-                src="./images/img1.jpg"
-                alt="Руки на клавіатурі перед планшетом і монітором"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/desctop/img1.webp 1x, /images/desctop/img1@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/desctop/img1.jpg 1x, ./images/desctop/img1@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/desctop/img1.jpg"
+                  alt="Руки на клавіатурі перед планшетом і монітором"
+                />
+              </picture>
+
               <p class="work-list__text">Десктопні додатки</p>
             </li>
             <li class="work-list__card">
-              <img
-                src="./images/img2.jpg"
-                alt="Рука зі смартфоном на фоні ноутбука із зображенням смартфона"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/desctop/img2.webp 1x, /images/desctop/img2@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/desctop/img2.jpg 1x, ./images/desctop/img2@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/desctop/img2.jpg"
+                  alt="Руки на клавіатурі перед планшетом і монітором"
+                />
+              </picture>
+
               <p class="work-list__text">Мобільні додатки</p>
             </li>
             <li class="work-list__card">
-              <img
-                src="./images/img3.jpg"
-                alt="Планшет з кольоровою гамою в руці, за ним - монітор"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/desctop/img3.webp 1x, /images/desctop/img3@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/desctop/img3.jpg 1x, ./images/desctop/img3@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/desctop/img3.jpg"
+                  alt="Руки на клавіатурі перед планшетом і монітором"
+                />
+              </picture>
               <p class="work-list__text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -242,12 +274,43 @@
 
           <ul class="team-list">
             <li class="team-list__card">
-              <img
-                class="team-list__image"
-                src="./images/member1.jpg"
-                alt="Фото Ігора Дем'яненка"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/desctop/member1.webp 1x, ./images/desctop/member1@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/desctop/member1.jpg 1x, ./images/desctop/member1@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/tablet/member1.webp 1x, ./images/tablet/member1@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/tablet/member1.jpg 1x, ./images/tablet/member1@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/mobile/member1.webp 1x, ./images/mobile/member1@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/mobile/member1.jpg 1x, ./images/mobile/member1@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team-list__image"
+                  src="./images/desctop/member1.jpg"
+                  alt="Фото Ігора Дем'яненка"
+                />
+              </picture>
+
               <h3 class="team-list__name">Ігор Дем'яненко</h3>
               <p class="team-list__profession">Product Designer</p>
               <ul class="media-list">
@@ -282,12 +345,43 @@
               </ul>
             </li>
             <li class="team-list__card">
-              <img
-                class="team-list__image"
-                src="./images/member2.jpg"
-                alt="Фото Ольги Рєпіної"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/desctop/member2.webp 1x, ./images/desctop/member2@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/desctop/member2.jpg 1x, ./images/desctop/member2@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/tablet/member2.webp 1x, ./images/tablet/member2@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/tablet/member2.jpg 1x, ./images/tablet/member2@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/mobile/member2.webp 1x, ./images/mobile/member2@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/mobile/member2.jpg 1x, ./images/mobile/member2@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team-list__image"
+                  src="./images/desctop/member2.jpg"
+                  alt="Фото Ольги Рєпіної"
+                />
+              </picture>
+
               <h3 class="team-list__name">Ольга Рєпіна</h3>
               <p class="team-list__profession">Frontend Developer</p>
               <ul class="media-list">
@@ -322,12 +416,42 @@
               </ul>
             </li>
             <li class="team-list__card">
-              <img
-                class="team-list__image"
-                src="./images/member3.jpg"
-                alt="Фото Миколи Тарасова"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/desctop/member3.webp 1x, ./images/desctop/member3@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/desctop/member3.jpg 1x, ./images/desctop/member3@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/tablet/member3.webp 1x, ./images/tablet/member3@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/tablet/member3.jpg 1x, ./images/tablet/member3@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/mobile/member3.webp 1x, ./images/mobile/member3@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/mobile/member3.jpg 1x, ./images/mobile/member3@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team-list__image"
+                  src="./images/desctop/member3.jpg"
+                  alt="Фото Миколи Тарасова"
+                />
+              </picture>
               <h3 class="team-list__name">Микола Тарасов</h3>
               <p class="team-list__profession">Marketing</p>
               <ul class="media-list">
@@ -362,12 +486,43 @@
               </ul>
             </li>
             <li class="team-list__card">
-              <img
-                class="team-list__image"
-                src="./images/member4.jpg"
-                alt="Фото Михайла Єрмакова"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/desctop/member4.webp 1x, ./images/desctop/member4@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/desctop/member4.jpg 1x, ./images/desctop/member4@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/tablet/member4.webp 1x, ./images/tablet/member4@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/tablet/member4.jpg 1x, ./images/tablet/member4@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/mobile/member4.webp 1x, ./images/mobile/member4@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/mobile/member4.jpg 1x, ./images/mobile/member4@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team-list__image"
+                  src="./images/desctop/member4.jpg"
+                  alt="Фото Михайла Єрмакова"
+                />
+              </picture>
+
               <h3 class="team-list__name">Михайло Єрмаков</h3>
               <p class="team-list__profession">UI Designer</p>
               <ul class="media-list">

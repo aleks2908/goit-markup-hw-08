@@ -14,8 +14,8 @@
   }
 
   @media screen and (min-width: 768px) {
-  margin-bottom: 30px;
-}
+    margin-bottom: 30px;
+  }
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
@@ -56,42 +56,28 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-    // justify-content: center;
-    // align-items: stretch;
-        // align-items: center;
-        @media screen and (max-width: 767px) {
-                flex-direction: column;
-            }
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
 }
 
-.project-list__card-discription {
-    // margin-bottom: auto;
-    // height: 100%;
-}
-
-// .project-list__link {
-//     height: 100%;
-//     // align-items: stretch;
-// }
 
 .project-list__card {
-        // align-items: stretch;
-        width: 100%;
-        height: 100%;
-    @media screen and (min-width: 768px) {
-            width: calc((100% - 30px) / 2);
-        }
-    
-        @media screen and (min-width: 1200px) {
-            width: calc((100% - 2 * 30px) / 3);
-        }
-//   width: 370px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 2 * 30px) / 3);
+  }
+ 
 }
 
 .project-list__link {
   display: flex;
-  height: 100%;
   flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--transition_data);
 
   &:hover,

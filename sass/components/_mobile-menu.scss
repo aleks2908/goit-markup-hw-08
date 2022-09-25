@@ -20,7 +20,7 @@
     pointer-events: auto;
   }
 
-  .mobile-menu_contaner {
+  .mobile-menu__contaner {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -32,6 +32,7 @@
 
   .close-mobile-menu-btn {
     position: absolute;
+    cursor: pointer;
     top: 10px;
     right: 15px;
     border: none;
@@ -83,9 +84,16 @@
     font-size: 34px;
     line-height: 1.18;
     letter-spacing: 0.02em;
-    color: var(--accent-color);
+    color: var(--secondary-text-color);
     margin-bottom: 32px;
     margin-top: auto;
+
+    transition: color var(--transition_data);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 
   .mobile-menu-contact-list__mail {
@@ -95,21 +103,79 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
 
-    color: #757575;
+    color: var(--secondary-text-color);
+
+    transition: color var(--transition_data);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 
   .mobile-menu-media-list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
+    .mobile-menu-media-list__item:not(:last-child)::after {
+      content: '';
+      width: 22px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      margin-left: 10px;
+      color: red;
+    }
+
   .mobile-menu-media-list__link {
-    color: var(--accent-color);
+    // color: var(--accent-color);
     letter-spacing: 0.02em;
     font-weight: 500;
     font-size: 18px;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
+
     line-height: 1.22px;
+    // padding-right: 10px;
+    // padding-left: 10px;
+
+    color: var(--secondary-text-color);
+
+    transition: color var(--transition_data);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+    // padding-bottom: 0;
+
+    // .fff {
+    //   // display: block;
+    //   height: 50px;
+    //   font-weight: 500;
+    //   font-size: 28px;
+    //   line-height: 50px;
+    //   // color: rgba(33, 33, 33, 0.2);
+      
+    //   color: red;
+    // }
+
+    // &::after {
+    //     // position: absolute;
+    //     display: block;
+    //     content: '';
+    //     width: 1px;
+    //     height: 22px;
+    //     top: 140px;
+    //     left: 200px;
+    //     // bottom: -1px;
+    //     background-color: rgba(33, 33, 33, 0.2);
+    //     // border-radius: 2px;
+    //   }
   }
+
+  //  .mobile-menu-media-list__link:first-child {
+  //    color: red;
+  //    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  //  }
 }
 
 @media screen and (min-width: 768px) {
