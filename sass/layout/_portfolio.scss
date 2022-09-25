@@ -61,7 +61,6 @@
   }
 }
 
-
 .project-list__card {
   width: 100%;
   @media screen and (min-width: 768px) {
@@ -71,7 +70,6 @@
   @media screen and (min-width: 1200px) {
     width: calc((100% - 2 * 30px) / 3);
   }
- 
 }
 
 .project-list__link {
@@ -119,7 +117,7 @@
   top: 100%;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 294px;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
