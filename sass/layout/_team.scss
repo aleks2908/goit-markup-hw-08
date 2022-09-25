@@ -15,17 +15,13 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-    @media screen and (min-width: 768px) {
-        width: calc((100% - 30px) / 2);
-      }
-    
-      @media screen and (min-width: 1200px) {
-        width: calc((100% - 3 * 30px) / 4);
-      }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
 
-  // &:not(:last-child) {
-  //   // margin-bottom: 30px;
-  // }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 3 * 30px) / 4);
+  }
 }
 
 .team-list__image {
@@ -54,10 +50,9 @@
   padding-bottom: 24px;
   justify-content: center;
 
-        @media screen and (min-width: 1200px) {
-            padding-bottom: 30px;
-          }
-  
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }
 
 .media-list__link {
