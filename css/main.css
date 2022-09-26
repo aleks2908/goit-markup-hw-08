@@ -228,9 +228,6 @@ body {
     border: 1px solid rgba(33, 33, 33, 0.2);
     margin-left: 10px;
   }
-  .mobile-menu-media-list__item {
-    padding-top: 20px;
-  }
   .mobile-menu-media-list__link {
     letter-spacing: 0.02em;
     font-weight: 500;
@@ -257,6 +254,9 @@ body {
   }
   .mobile-menu__contaner {
     padding: 6vh 4vw 6vh 8vw;
+  }
+  .mobile-menu-media-list__item {
+    padding-top: 1vh;
   }
   .mobile-menu__link {
     font-size: 8.51vw;
