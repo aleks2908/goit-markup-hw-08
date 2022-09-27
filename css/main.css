@@ -303,7 +303,7 @@ body.modal-open {
 }
 @media screen and (max-width: 479px) {
   .modal-window {
-    margin-top: 20px;
+    margin-top: 15vh;
     left: 50%;
     transform: translate(-50%, 0);
     width: 90%;
@@ -660,7 +660,6 @@ body.modal-open {
 }
 
 .hero {
-  max-width: 480px;
   margin-right: auto;
   margin-left: auto;
   background-size: cover;
@@ -677,13 +676,11 @@ body.modal-open {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/bg-hero.jpg");
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/bg-hero@2x.jpg");
   }
 }

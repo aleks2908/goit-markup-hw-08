@@ -8,9 +8,11 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-
   @media screen and (max-width: 479px) {
-    margin-top: 20px;
+    // margin-top: 50px;
+    margin-top: 15vh;
+    // margin-bottom: 20%;
+
     left: 50%;
     transform: translate(-50%, 0);
 
