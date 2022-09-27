@@ -296,8 +296,6 @@ body.modal-open {
 .modal-window {
   position: absolute;
   padding: 40px;
-  width: auto;
-  height: auto;
   overflow: auto;
   background-color: var(--primery-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -308,17 +306,6 @@ body.modal-open {
     margin-top: 20px;
     left: 50%;
     transform: translate(-50%, 0);
-  }
-}
-@media screen and (min-width: 480px) {
-  .modal-window {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-@media screen and (max-width: 479px) {
-  .modal-window {
     width: 90%;
     height: auto;
     padding: 8vw;
@@ -330,6 +317,9 @@ body.modal-open {
 }
 @media screen and (min-width: 480px) {
   .modal-window {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 450px;
     height: 609px;
     overflow: hidden;
@@ -364,10 +354,19 @@ body.modal-open {
 
 .modal-form__title {
   font-weight: 700;
-  font-size: 20px;
   line-height: 1.5;
   text-align: center;
   margin-bottom: 12px;
+}
+@media screen and (max-width: 479px) {
+  .modal-form__title {
+    font-size: 4.7vw;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal-form__title {
+    font-size: 20px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal-form__title {
