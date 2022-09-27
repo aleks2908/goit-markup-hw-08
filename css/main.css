@@ -486,11 +486,11 @@ body.modal-open {
   justify-content: center;
   cursor: pointer;
   padding: 10px;
-  width: 200px;
-  background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  width: 200px;
+  background-color: var(--accent-color);
   color: #ffffff;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -498,6 +498,12 @@ body.modal-open {
   margin: 30px auto 0px;
   border: none;
   transition: color var(--transition_data), background-color var(--transition_data);
+}
+@media screen and (max-width: 479px) {
+  .modal-form__submit-btn {
+    width: 45vw;
+    font-size: 4.1vw;
+  }
 }
 .modal-form__submit-btn:hover, .modal-form__submit-btn:focus {
   background-color: #188ce8;
