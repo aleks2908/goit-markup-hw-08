@@ -1,6 +1,7 @@
 .modal-window {
-  position: absolute;
+  position: relative;
   padding: 40px;
+  margin: 0 auto;
   overflow: auto;
   background-color: var(--primery-bg-color);
 
@@ -8,25 +9,28 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
+    min-height: 609px;
     // margin-top: 50px;
-    margin-top: 15vh;
+    // margin-top: 15vh;
     // margin-bottom: 20%;
 
-    left: 50%;
-    transform: translate(-50%, 0);
+    // left: 50%;
+    // transform: translate(-50%, 0);
 
-    width: 90%;
-    height: auto;
-    padding: 8vw;
-    overflow-y: scroll;
+    // width: 90%;
+    // height: auto;
+    // padding: 8vw;
+    // overflow-y: scroll;
 
-    .modal-form__textarea {
-      height: 25vw;
-    }
+    // .modal-form__textarea {
+    //   height: 25vw;
+    // }
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
+    position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
