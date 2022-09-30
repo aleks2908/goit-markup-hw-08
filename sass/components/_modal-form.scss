@@ -2,7 +2,8 @@
   font-weight: 700;
 
   @media screen and (max-width: 479px) {
-    font-size: 4.7vw;
+    // font-size: 4.7vw;
+    font-size: calc(2vw + 9px);
   }
 
   @media screen and (min-width: 480px) {
@@ -142,8 +143,9 @@
   width: 200px;
 
   @media screen and (max-width: 479px) {
-    width: 45vw;
-    font-size: 4.1vw;
+    width: calc(25vw + 79px);
+
+    font-size: calc(2vw + 7px);
   }
 
   background-color: var(--accent-color);
