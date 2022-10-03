@@ -139,11 +139,11 @@
   }
 }
 
-
-
 @media screen and (max-width: 479px) {
   .mobile-menu-contact-list__tel {
     margin-bottom: 4vh;
+    font-size: 7.01vw;
+    // font-size: calc(4vw + 14px);
   }
 
   .mobile-menu-contact-list {
@@ -164,10 +164,6 @@
 
   .mobile-menu__link {
     font-size: 8.51vw;
-  }
-
-  .mobile-menu-contact-list__tel {
-    font-size: 7.01vw;
   }
 
   .mobile-menu-contact-list__mail {

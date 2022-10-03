@@ -249,6 +249,7 @@ body.modal-open {
 @media screen and (max-width: 479px) {
   .mobile-menu-contact-list__tel {
     margin-bottom: 4vh;
+    font-size: 7.01vw;
   }
   .mobile-menu-contact-list {
     margin-bottom: 8vh;
@@ -264,9 +265,6 @@ body.modal-open {
   }
   .mobile-menu__link {
     font-size: 8.51vw;
-  }
-  .mobile-menu-contact-list__tel {
-    font-size: 7.01vw;
   }
   .mobile-menu-contact-list__mail {
     font-size: 5.01vw;
